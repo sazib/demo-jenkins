@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ScrollMotionStudio" verbose="1" preserve-order="true">
+	<listeners>
+		<listener class-name="com.scrollmotion.util.CustomReporter" />
+	</listeners>
+
+	<!-- test name="Nopackage" > <classes> <class name="NoPackageTest" /> </classes> </test -->
+
+	<packages>
+		<package name="com.scrollmotion.studio" />
+	</packages>
+
+<test name="TestDemo">
+		<classes>
+			<class name ="Test">
+			      <methods>
+					  <include name="testMethod" />	  
+			      </methods>
+			</class>
+		</classes>
+	</test>	
+</suite>
