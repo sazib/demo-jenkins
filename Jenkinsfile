@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
           steps {
             withMaven(maven: 'M3')
-            sh 'mvn clean install'
+            sh 'mvn -Dmaven.test.failure.ignore clean install'
           }
         }
         stage('Results') {
